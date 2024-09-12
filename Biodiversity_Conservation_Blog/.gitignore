@@ -1,0 +1,17 @@
+# Ignore virtual environment directories
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore IDE configurations
+.vscode/
+.idea/
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+
+# Ignore system-specific files
+Thumbs.db  # Windows

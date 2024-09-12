@@ -1,0 +1,44 @@
+blog_project/
+│
+├── app/
+│   ├── __init__.py                # Initialize Flask app, extensions, and configurations
+│   ├── models.py                  # Database models (SQLAlchemy)
+│   ├── routes.py                  # API endpoints for blog posts, users, payments, etc.
+│   ├── mpesa.py                   # MPESA payment integration (STK push logic)
+│   ├── social_sharing.py          # Social media sharing logic
+│   ├── utils.py                   # Utility functions (helper functions, email alerts, etc.)
+│   ├── forms.py                   # Flask-WTF forms for handling user inputs
+│   ├── static/                    # Static files (CSS, JavaScript, images)
+│   │   ├── css/
+│   │   ├── js/
+│   ├── templates/                 # HTML templates (Jinja2)
+│   │   ├── layout.html            # Base template
+│   │   ├── index.html             # Home page
+│   │   ├── post_detail.html       # Blog post detail view
+│   ├── config.py                  # Configuration settings for different environments
+│   ├── auth/                      # Authentication and user management
+│   │   ├── __init__.py            # Auth blueprint initialization
+│   │   ├── routes.py              # Routes related to login, registration, etc.
+│   │   ├── forms.py               # Forms for registration, login, etc.
+│   │   ├── models.py              # Models related to user management
+│   └── errors/                    # Custom error handling
+│       ├── handlers.py            # Error handling logic (404, 500, etc.)
+│
+├── migrations/                    # Database migrations (handled by Flask-Migrate)
+│
+├── tests/
+│   ├── test_app.py                # Unit tests for the application
+│   ├── test_mpesa.py              # Unit tests for MPESA integration
+│   ├── test_routes.py             # Unit tests for API endpoints
+│
+├── .env                           # Environment variables (e.g., API keys, secrets)
+├── .gitignore                     # Git ignore file to exclude unnecessary files
+├── README.md                      # Project documentation
+├── requirements.txt               # Python dependencies
+├── run.py                         # Main entry point for the Flask app
+├── Dockerfile                     # Dockerfile for containerizing the app
+├── docker-compose.yml             # Docker Compose file for multi-container setup (e.g., app, database)
+├── Procfile                       # For deployment in Heroku
+├── wsgi.py                        # WSGI entry point for production servers (e.g., Gunicorn)
+└── LICENSE                        # License for the project
+
